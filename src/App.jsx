@@ -34,8 +34,8 @@ const App = () => {
         <div className="container">
           <Routes>
             <Route path={"/marvel-site"} element={<Comics />} />
-            <Route path={"/basket"} element={<OrderBasket />} />
-            <Route path={"/favorite"} element={<FavoriteItems />} />
+            <Route path={"/marvel-site/basket"} element={<OrderBasket />} />
+            <Route path={"/marvel-site/favorite"} element={<FavoriteItems />} />
             <Route path={"*"} element={<NotPage />} />
           </Routes>
         </div>
