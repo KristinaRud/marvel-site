@@ -15,7 +15,7 @@ const FavoriteItems = ({
   
   return (
     <>
-      <Link to="/"><HomeIcon sx={{ color: "black" }} /><ArrowBackIcon sx={{ color: "black" }} /></Link>
+      <Link to="/marvel-site"><HomeIcon sx={{ color: "black" }} /><ArrowBackIcon sx={{ color: "black" }} /></Link>
       <h1>FavoriteItems</h1>
       <Slider data={favoriteComics}/>      
     </>

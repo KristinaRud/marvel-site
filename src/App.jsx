@@ -33,7 +33,7 @@ const App = () => {
       <main className="main">
         <div className="container">
           <Routes>
-            <Route path={"/"} element={<Comics />} />
+            <Route path={"/marvel-site"} element={<Comics />} />
             <Route path={"/basket"} element={<OrderBasket />} />
             <Route path={"/favorite"} element={<FavoriteItems />} />
             <Route path={"*"} element={<NotPage />} />
