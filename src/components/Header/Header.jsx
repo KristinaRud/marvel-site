@@ -3,16 +3,16 @@ import "./Header.scss";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-const Header = ({ countOrder }) => {
+const Header = () => {
   const favorites = useSelector(state => state.favorite.favoriteList);
   const orders = useSelector((state) => state.order.orderList);
   return (
     <header className="header">
-      <div className="container">
+      <div className="container-sm container">
         <div className="header__wrapper">
           <div className="header__actions">
             <div className="header__favorites-list">
-              <Link to="/marvel-site/favorite">
+              <Link to="/favorite">
                 <span className="icon-favorite">
                   <span className="count">{favorites.length}</span>
                   <svg
@@ -31,7 +31,7 @@ const Header = ({ countOrder }) => {
             </div>
           </div>
           <div className="header__logo">
-            <Link to="/marvel-site" className="logo">
+            <Link to="/" className="logo">
               <svg
                 width="130"
                 height="52"
@@ -53,7 +53,7 @@ const Header = ({ countOrder }) => {
           </div>
           <div className="header__actions">
             <div className="header__favorites-list">
-              <Link to="/marvel-site/basket">
+              <Link to="/basket">
                 <span className="icon-favorite">
                   <span className="count">{orders.map(({ count }) => count).reduce((prev, curr) => prev + curr, 0)}</span>
                   <svg
@@ -79,11 +79,6 @@ const Header = ({ countOrder }) => {
 }
 
 export default Header;
-
-Header.propTypes = {
-  countOrder: PropTypes.number,
-  countFavor: PropTypes.number
-};
 
 Header.defaultProps = {
   countOrder: 0,

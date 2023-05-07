@@ -29,6 +29,5 @@ Input.propTypes = {
 	name: PropTypes.string.isRequired,
 	placeholder: PropTypes.string,
 	error: PropTypes.bool,
-	errorMessage:PropTypes.string,
 }
 

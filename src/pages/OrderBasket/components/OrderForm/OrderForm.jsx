@@ -28,7 +28,7 @@ const OrderForm = ({ price }) => {
           localStorage.removeItem('arrOrder');
           dispatch(actionSetOrder([]));
           resetForm();
-          navigate("/marvel-site");
+          navigate("/");
 
         }}
         validationSchema={validationSchema}

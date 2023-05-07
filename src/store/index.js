@@ -3,9 +3,6 @@ import logger from "redux-logger";
 import thunk from "redux-thunk";
 import { comicsReducer, appReducer, orderReducer, favoriteReducer, formReducer } from "../reducer";
 
-
-
-
 const store = configureStore({
 	reducer: {
 		form:formReducer,

@@ -9,6 +9,7 @@ import NotPage from "./pages/NotPage/NotPage";
 import FavoriteItems from "./pages/FavoriteItems/FavoriteItems";
 import { useDispatch, useSelector } from "react-redux";
 import { actionSetFavorite, actionSetOrder,actionFetchSliderComics } from "./reducer";
+import CardViewContextProvider from "./context/CardViewContext/CardViewProviderContext";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -33,9 +34,9 @@ const App = () => {
       <main className="main">
         <div className="container">
           <Routes>
-            <Route path={"/marvel-site"} element={<Comics />} />
-            <Route path={"/marvel-site/basket"} element={<OrderBasket />} />
-            <Route path={"/marvel-site/favorite"} element={<FavoriteItems />} />
+            <Route path={"/"} element={<CardViewContextProvider><Comics /></CardViewContextProvider>}/>
+            <Route path={"/basket"} element={<OrderBasket />} />
+            <Route path={"/favorite"} element={<FavoriteItems />} />
             <Route path={"*"} element={<NotPage />} />
           </Routes>
         </div>

@@ -38,7 +38,7 @@ code {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    padding-top: 50px;
+    padding-top: 30px;
     box-sizing: border-box;
   }
 }
@@ -64,4 +64,8 @@ textarea {
   font-size: 16px;
   outline: none;
   transition: border 0.2s ease-in-out;
+}
+
+p{
+  margin: 0;
 }
