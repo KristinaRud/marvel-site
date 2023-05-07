@@ -7,7 +7,7 @@ const NotPage = () => {
 		<div className="page-notfound">
 			<p className="page-title">Oops! We can't find the page you're looking for</p>
 			<p className="page-desc">
-				You tried to request a page that doesn't exist. Return to <Link to="/">Home page</Link>.
+				You tried to request a page that doesn't exist. Return to <Link to="/marvel-site/">Home page</Link>.
 			</p>
 		</div>
 	)

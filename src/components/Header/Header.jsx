@@ -12,7 +12,7 @@ const Header = () => {
         <div className="header__wrapper">
           <div className="header__actions">
             <div className="header__favorites-list">
-              <Link to="/favorite">
+              <Link to="/marvel-site/favorite">
                 <span className="icon-favorite">
                   <span className="count">{favorites.length}</span>
                   <svg
@@ -31,7 +31,7 @@ const Header = () => {
             </div>
           </div>
           <div className="header__logo">
-            <Link to="/" className="logo">
+            <Link to="/marvel-site/" className="logo">
               <svg
                 width="130"
                 height="52"
@@ -53,7 +53,7 @@ const Header = () => {
           </div>
           <div className="header__actions">
             <div className="header__favorites-list">
-              <Link to="/basket">
+              <Link to="/marvel-site/basket">
                 <span className="icon-favorite">
                   <span className="count">{orders.map(({ count }) => count).reduce((prev, curr) => prev + curr, 0)}</span>
                   <svg
